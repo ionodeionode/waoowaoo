@@ -1,4 +1,4 @@
-# Changelog / 更新日志
+# Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -6,32 +6,33 @@ All notable changes to this project will be documented in this file.
 
 ## [v0.2] - 2026-02-28
 
-### ✨ 新功能
-- 增加 OpenAI 兼容图片、视频格式支持
+### ✨ New Features
+- Added support for OpenAI-compatible image and video formats
 
-### 🐛 修复
-- 修复默认模型配置后项目模型需要二次选择的问题
-- 修复部分情况 resolution 无法读取的问题
-- 修复模型链路为 LangGraph
-- 修复默认参数无选择问题
-- 修复关闭计费依然触发计费问题
-- 修复 openai-compatible 被误判为原生 OpenAI 推理问题
-- 修复 JSON 解析失败问题
+### 🐛 Bug Fixes
+- Fixed an issue where the project model required a second selection after setting a default model config
+- Fixed an issue where `resolution` could not be read in certain cases
+- Fixed model pipeline to use LangGraph
+- Fixed missing default parameter selection
+- Fixed billing being triggered even when billing was disabled
+- Fixed openai-compatible provider being incorrectly identified as native OpenAI inference
+- Fixed JSON parse failures
 
-### ⚙️ 优化
-- 修改为默认计费 off
-- 增强提示词 JSON 格式限制
+### ⚙️ Improvements
+- Changed default billing mode to off
+- Enhanced JSON format constraints for prompt output
 
 ---
 
 ## [v0.2.1] - 2026-02-28
 
-### 🐛 修复
-- 修复 AI 生成内容语言不跟随网站语言设置的问题
-- 修复前端 API 请求未携带 Accept-Language header 导致 locale 回退到浏览器默认语言
+### 🐛 Bug Fixes
+- Fixed AI-generated content language not following the website language setting
+- Fixed missing `Accept-Language` header in frontend API requests, causing locale to fall back to browser default
+
 ---
 
 ## [v0.1] - 2026-02-27
 
-### 🎉 首次发布
-- 项目初始开源版本
+### 🎉 Initial Release
+- First open-source release of the project
